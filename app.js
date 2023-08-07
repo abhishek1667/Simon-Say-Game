@@ -40,10 +40,8 @@ function levelUp() {
 
 function checkAns(idx) {
 
-    if(userSeq[idx] === gameSeq[idx]) {
-        if(userSeq.length == gameSeq.length) {
+    if(userSeq[idx] === gameSeq[idx] && userSeq.length == gameSeq.length) {
             setTimeout(levelUp, 1000);
-        }
     } else {
         highestScore.push(level);
         highestScore.sort((a, b) => a - b);
