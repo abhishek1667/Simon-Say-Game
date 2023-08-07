@@ -47,7 +47,7 @@ function checkAns(idx) {
     } else {
         highestScore.push(level);
         highestScore.sort((a, b) => a - b);
-        p.innerHTML = `Game over! Your highest score is <b>${highestScore[highestScore.length - 1]}<b/><br>Press any key to start.`;
+        p.innerHTML = `Game over! Your score was <b>${highestScore[highestScore.length - 1]}<b/><br>Press any key to start.`;
         document.querySelector("body").style.backgroundColor = "red";
         setTimeout(function () {
             document.querySelector("body").style.backgroundColor = "transparent";
