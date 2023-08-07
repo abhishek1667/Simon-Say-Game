@@ -57,20 +57,21 @@ function checkAns(idx) {
 }
 
 function btnPress() {
-    let btn = this;
-    btnFlash(btn);
+    if(started) {
+        let btn = this;
+        btnFlash(btn);
 
-    let userColor = btn.getAttribute("id");
-    userSeq.push(userColor);
+        let userColor = btn.getAttribute("id");
+        userSeq.push(userColor);
 
-    checkAns(userSeq.length - 1);
+        checkAns(userSeq.length - 1);
+    }
 }
 
 let allBtns = document.querySelectorAll(".main-btn");
 
 for(let btn of allBtns) {
-    if(started)
-        btn.addEventListener("click", btnPress);
+    btn.addEventListener("click", btnPress);
 }
 
 function reset() {
