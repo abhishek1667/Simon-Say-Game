@@ -1,0 +1,70 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Dancing Script';
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 600;
+    background-color: transparent;
+}
+
+body {
+    height: 100vh;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+/* utility class */
+
+.d-flex {
+    display: flex;
+    align-items: center;
+}
+
+h1 {
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.red {
+    background-color: #d95980;
+}
+
+.yellow {
+    background-color: #f99b45;
+}
+
+.green {
+    background-color: #68aac0;
+}
+
+.purple {
+    background-color: #819ff9;
+}
+
+.flash {
+    background-color: #fff;
+}
+
+/* game */
+
+.btn-container {
+    flex-direction: column;
+    height: fit-content;
+    width: fit-content;
+}
+
+.btns {
+    height: fit-content;
+    width: fit-content;
+}
+
+.main-btn {
+    height: 10rem;
+    width: 10rem;
+    margin: 0.5rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 1rem #00000021;
+}
