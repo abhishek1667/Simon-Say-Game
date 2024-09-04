@@ -9,7 +9,7 @@ let level = 0;
 
 let p = document.querySelector("p");
 
-document.addEventListener("onclick", function () {
+document.addEventListener("click", function () {
     if(!started) {
         started = true;
 
