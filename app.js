@@ -9,7 +9,7 @@ let level = 0;
 
 let p = document.querySelector("p");
 
-document.addEventListener("keypress", function () {
+document.addEventListener("onclick", function () {
     if(!started) {
         started = true;
 
